@@ -9,6 +9,12 @@ public class Movement : MonoBehaviour
     [SerializeField] private KeyCode moveLeftKey = KeyCode.A;
     [SerializeField] private KeyCode moveRightKey = KeyCode.D;
 
+    public float MoveSpeed
+    {
+        get => moveSpeed;
+        set => moveSpeed = value;
+    }
+
     [Header("Rotation Settings")]
     [SerializeField] private KeyCode rotateLeftKey = KeyCode.Q;
     [SerializeField] private KeyCode rotateRightKey = KeyCode.E;
